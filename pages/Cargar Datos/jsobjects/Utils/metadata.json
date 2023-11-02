@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "Cargar Datos",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Cargar Datos_Utils",
+  "deleted": false,
+  "gitSyncId": "653272939685b4454db35a68_653fa5a6b4c0ea6ee4435ddd"
+}

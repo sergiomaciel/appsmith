@@ -1,0 +1,16 @@
+SELECT
+  e.legajo,
+  p.apellido_nombre,
+  p.dni,
+  uf.nombre_uf as unidad_funcional,
+  e.interino,
+  l.nombre_localidad as localidad,
+  CASE
+    WHEN e.fecha_egreso  = '0001-01-01' THEN 'SI'
+    ELSE 'NO'
+  END AS activo
+FROM
+  empleados e
+INNER JOIN personas p ON e.persona_id = p.id
+INNER JOIN comps.unidades_funcionales uf ON e.unidad_funcional_id = uf.id
+INNER JOIN comps.localidades l ON uf.localidad_id = l.id

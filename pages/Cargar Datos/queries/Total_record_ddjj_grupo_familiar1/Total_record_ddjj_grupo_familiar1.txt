@@ -1,0 +1,1 @@
+SELECT COUNT(*) from ddjj_grupo_familiar WHERE motivo LIKE '%{{TableDocFamiliar.searchText}}%';
